@@ -35,3 +35,7 @@ A dokumentáció a `docs` mappában van. Generálás:
 ```
 npx apidoc -i app/Http/Controllers -o docs
 ```
+
+## Bruno
+
+A `bruno` mappát Brunóban az **Open Collection** gombbal lehet megnyitni. Először a **Login** kérést kell futtatni, a token utána automatikusan bekerül a többi kérésbe.

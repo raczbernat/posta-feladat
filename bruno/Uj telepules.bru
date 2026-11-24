@@ -1,0 +1,31 @@
+meta {
+  name: Uj telepules
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://127.0.0.1:8000/api/telepulesek
+  body: json
+  auth: bearer
+}
+
+headers {
+  Accept: application/json
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "irsz": "8000",
+    "nev": "Székesfehérvár",
+    "megye": "Fejér"
+  }
+}
+
+script:post-response {
+  bru.setVar("id", res.body.id);
+}

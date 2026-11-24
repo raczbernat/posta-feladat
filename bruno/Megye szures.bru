@@ -1,0 +1,19 @@
+meta {
+  name: Megye szures
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://127.0.0.1:8000/api/telepulesek?megye=Pest
+  body: none
+  auth: none
+}
+
+params:query {
+  megye: Pest
+}
+
+headers {
+  Accept: application/json
+}
