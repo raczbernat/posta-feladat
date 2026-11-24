@@ -1,0 +1,7 @@
+{
+  "name": "Posta API",
+  "version": "1.0.0",
+  "description": "Irányítószám kereső REST API",
+  "title": "Posta API",
+  "url": "http://localhost:8000/api"
+}
